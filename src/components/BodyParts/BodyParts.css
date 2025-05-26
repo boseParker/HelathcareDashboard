@@ -1,0 +1,35 @@
+.cards {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.card  img{
+    height: 40px;
+    width: 40px;
+}
+.card .progress {
+  height: 6px;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+.card-group{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.red { background: #f44336; width: 60%; }
+.green { background: #4caf50; width: 90%; }
+.yellow { background: #f8b045; width: 70%; }
