@@ -11,14 +11,13 @@ const SideNavbar = ({ navlinks }) => {
 
   return (
     <>
-      {/* Toggle Button - stays outside sidebar */}
+     
       <div className={`toggle-btn ${isOpen ? 'hide' : ''}`} onClick={toggleSidebar}>
         ☰
       </div>
 
-      {/* Sidebar */}
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-        {/* Close Icon inside sidebar */}
+        
         <div className="close-btn" onClick={toggleSidebar}>✕</div>
 
         <h2><span className="highlight">Health</span> care.</h2>

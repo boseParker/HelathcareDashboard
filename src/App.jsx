@@ -3,9 +3,10 @@ import { BrowserRouter } from 'react-router-dom'
 import SideNavbar from './components/SideNavabr/SideNavbar'
 import { navlinks } from './data/navalinkData'
 import BodyContent from './components/BodyContent/BodyContent'
-import {bodypart} from './data/bodyPartData'
+import {bodypart,Activitydata} from './data/bodyPartData'
 import Calendersection from './components/calenderSection/Calendersection'
-import { calendarAppointments, appointmentDetails } from "./data/calenderdata"
+import { calendarAppointments, appointmentDetails,upcomingSchedule ,userDetailicons,clanderDates} from "./data/calenderdata"
+
 function App() {
 
   return (
@@ -13,8 +14,21 @@ function App() {
       <BrowserRouter>
         <div className='container'>
           <SideNavbar navlinks={navlinks}/>
-          <BodyContent bodypart={bodypart}/>
-          <Calendersection calendarAppointments={calendarAppointments}/>
+          <BodyContent
+           bodypart={bodypart}
+          Activitydata={Activitydata}
+           className="body-content"/>
+
+
+          <Calendersection 
+          calendarAppointments={calendarAppointments}
+          appointmentDetails={appointmentDetails}
+          upcomingSchedule={upcomingSchedule}
+          userDetailicons={userDetailicons}
+          clanderDates={clanderDates}  
+          
+          className="calender-content"
+          />
         </div>
        
       </BrowserRouter>

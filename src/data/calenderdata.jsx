@@ -9,9 +9,9 @@ const userDetailicons=[
 
 ]
 const calendarAppointments = [
-  { day: 26, times: ['09:00'] },
-  { day: 27, times: ['11:00'] },
-  { day: 30, times: ['12:00', '14:00'] }
+  { day: 11, times: ['09:00'] },
+  { day: 13, times: ['11:00'] },
+  { day: 15, times: ['12:00', '14:00'] }
 ];
 
 const appointmentDetails = [
@@ -52,5 +52,8 @@ const appointmentDetails = [
   },
 ];
 
+const clanderDates={
+  dates:[11,12,13,14,15,16,17]
+}
 
-export { calendarAppointments, appointmentDetails,upcomingSchedule,userDetailicons };
+export { calendarAppointments, appointmentDetails,upcomingSchedule,userDetailicons ,clanderDates};

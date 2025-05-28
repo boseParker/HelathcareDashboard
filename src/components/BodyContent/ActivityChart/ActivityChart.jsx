@@ -1,17 +1,7 @@
 import React from 'react';
 import './ActivityChart.css';
 
-const data = [
-  { day: 'Mon', bars: [40, 60, 30] },
-  { day: 'Tues', bars: [50, 70, 40] },
-  { day: 'Wed', bars: [30, 50, 20] },
-  { day: 'Thurs', bars: [60, 80, 50] },
-  { day: 'Fri', bars: [70, 90, 30] },
-  { day: 'Sat', bars: [30, 50, 25] },
-  { day: 'Sun', bars: [40, 60, 35] },
-];
-
-const ActivityChart = () => {
+const ActivityChart = ({Activitydata}) => {
   return (
     <div className="activity-chart">
       <div className="chart-header">
@@ -19,9 +9,11 @@ const ActivityChart = () => {
         <span>3 appointments on this week</span>
       </div>
       <div className="chart-body">
-        {data.map((item, index) => (
+        {Activitydata.map((item, index) => (
           <div className="chart-day" key={index}>
+
             <div className="bars">
+              
               {index%2==0 ?
                <div className='bar gray' style={{height:'100%'}}></div>:''
               }

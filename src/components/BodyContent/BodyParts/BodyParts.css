@@ -30,6 +30,23 @@
     align-items: center;
 }
 
-.red { background: #f44336; width: 60%; }
-.green { background: #4caf50; width: 90%; }
-.yellow { background: #f8b045; width: 70%; }
+.red {
+   background: #f44336; width: 60%; 
+  }
+.green { 
+  background: #4caf50; width: 90%;
+ }
+.yellow { 
+  background: #f8b045; width: 70%;
+ }
+
+@media screen and (min-width:320px) and (max-width:429px) {
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .card{
+    width: 80vw;
+  }
+  
+}

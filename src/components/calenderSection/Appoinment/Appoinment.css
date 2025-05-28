@@ -1,18 +1,17 @@
-/* Appointment Cards */
+
 .cardSection {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
 }
 
 .appointmentCard {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
   background-color: #fff;
   border: 1px solid #e2e2e2;
   border-radius: 8px;
   padding: 12px;
-  width: 200px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,3 +35,9 @@
   width: 50px;
 }
 
+@media screen and (min-width:320px) and (max-width:429px) {
+  
+  .cardSection {
+    grid-template-columns: repeat(1,1fr);
+  }
+}

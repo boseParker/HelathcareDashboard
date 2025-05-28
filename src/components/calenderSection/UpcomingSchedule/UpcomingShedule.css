@@ -11,9 +11,9 @@
 }
 
 .scheduleList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
  
 }
 
@@ -59,3 +59,9 @@
   color: #3498db;
 }
 
+@media screen and (min-width:320px) and (max-width:426px) {
+  .scheduleList{
+    grid-template-columns: repeat(1,1fr);
+  }
+  
+}

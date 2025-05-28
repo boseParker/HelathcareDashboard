@@ -1,4 +1,3 @@
-// src/components/calendarSection/AppointmentCards.jsx
 import React from 'react';
 import './Appoinment.css';
 

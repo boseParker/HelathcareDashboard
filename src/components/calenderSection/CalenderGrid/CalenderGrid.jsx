@@ -1,12 +1,12 @@
 import './CalenderGrid.css';
 
 const days = ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'];
-const dates = [25, 26, 27, 28, 29, 30, 31];
 
-const CalendarGrid = ({ appointments }) => {
+
+const CalendarGrid = ({ appointments ,clanderDates}) => {
   return (
     <div className="grid">
-      {dates.map((date, index) => {
+      {clanderDates.dates.map((date, index) => {
         const slot = appointments.find((item) => item.day === date);
         return (
           <div key={date} className="gridCell">

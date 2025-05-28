@@ -1,11 +1,9 @@
-/* General Reset & Global Styling */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background: #f5f9ff;
 }
 
-/* Main container holds sidebar + body + calendar */
 .container {
   display: flex;
   gap: 20px;
@@ -21,10 +19,23 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
   .container {
     flex-direction: column;
     gap: 12px;
     padding: 12px;
   }
+  .body-content{
+    margin-top: 3rem;
+  }
 }
+
+@media screen and (max-width: 1024px) {
+  .container.sidebar-open .body-content,
+  .container.sidebar-open .calendar-content {
+    filter: blur(2px);
+    pointer-events: none;
+    user-select: none;
+  }
+}
+

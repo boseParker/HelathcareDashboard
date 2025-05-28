@@ -2,7 +2,7 @@ import lungs from "../assets/images/lungs.png";
 import teeth from "../assets/images/teeth.png";
 import bone from "../assets/images/bone.png";
 import { IoMdQrScanner } from "react-icons/io";
-export const bodypart = {
+ const bodypart = {
   parts: [
     {
       id: 1,
@@ -32,3 +32,16 @@ export const bodypart = {
   ,
   scanner:<IoMdQrScanner/>
 };
+
+
+const Activitydata = [
+  { day: 'Mon', bars: [40, 60, 30] },
+  { day: 'Tues', bars: [50, 70, 40] },
+  { day: 'Wed', bars: [30, 50, 20] },
+  { day: 'Thurs', bars: [60, 80, 50] },
+  { day: 'Fri', bars: [70, 90, 30] },
+  { day: 'Sat', bars: [30, 50, 25] },
+  { day: 'Sun', bars: [40, 60, 35] },
+];
+
+export {Activitydata,bodypart}
