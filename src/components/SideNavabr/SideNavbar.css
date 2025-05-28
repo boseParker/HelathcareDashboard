@@ -1,8 +1,12 @@
 .sidebar {
   width: 240px;
+  height: 100vh;
   background: #fff;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   border-right: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  transition: left 0.3s ease;
 }
 
 .sidebar h2 {
@@ -13,34 +17,87 @@
 .sidebar .highlight {
   color: #00bcd4;
 }
-.sidebar nav{
-    padding-top: 20px;
+
+.sidebar nav {
+  padding-top: 20px;
 }
+
 .sidebar nav li {
   list-style: none;
-  padding: 0;
   display: flex;
   gap: 40px;
   padding: 10px 10px;
   font-size: 20px;
-
-}
-
-.sidebar nav li a{
-    text-decoration: none;
-    color: #333;
-}
-.sidebar nav  li {
-  padding: 0.75rem 1rem;
   cursor: pointer;
   border-radius: 8px;
   color: #9c9a9a;
 }
 
-.sidebar nav  li.active {
+.sidebar nav li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar nav li.active {
   background: #f0ecec;
   color: #0b0b0b;
   font-weight: 600;
   border-radius: 20px;
 }
 
+/* Toggle Button */
+.toggle-btn {
+  display: none;
+  font-size: 28px;
+  background: #00bcd4;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 2001;
+}
+
+/* Hide toggle when sidebar is open */
+.toggle-btn.hide {
+  display: none !important;
+}
+
+/* Close Icon */
+.close-btn {
+  display: none;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  color: #333;
+  z-index: 2002;
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -360px;
+    z-index: 2000;
+    width: 240px;
+    height: 100vh;
+    background: #fff;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .close-btn {
+    display: block;
+  }
+}

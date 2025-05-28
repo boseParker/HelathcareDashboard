@@ -1,0 +1,61 @@
+
+.upcomingScheduleContainer {
+  margin-top: 40px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.scheduleList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+ 
+}
+
+.scheduleCard {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #f8f9fb;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e2e2;
+  
+}
+
+.scheduleLeft {
+  text-align: left;
+}
+
+.scheduleTime {
+  font-weight: 600;
+  font-size: 16px;
+  color: #34495e;
+}
+
+.scheduleDate {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.scheduleRight {
+  text-align: right;
+}
+
+.scheduleType {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.scheduleDoctor {
+  font-size: 14px;
+  color: #3498db;
+}
+

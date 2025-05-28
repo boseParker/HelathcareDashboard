@@ -1,0 +1,46 @@
+.grid {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.gridCell {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 3px 10px;
+  width: 50px;
+  text-align: center;
+}
+
+.day {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.slots {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.slot {
+  background-color: #d0e6ff;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:429px) {
+
+  .grid {
+   flex-wrap: wrap;
+}
+  
+}

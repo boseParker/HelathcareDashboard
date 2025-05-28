@@ -1,5 +1,29 @@
+.body-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-.body-content{
-    display: flex;
-    flex-direction: column;
+/* Medium devices - tablets */
+@media screen and (max-width: 768px) {
+  .body-content {
+    padding: 12px;
+    gap: 16px;
+  }
+}
+
+/* Small devices - phones */
+@media screen and (max-width: 480px) {
+  .body-content {
+    padding: 8px;
+    gap: 12px;
+  }
+  
+  /* Optional: reduce font sizes inside child components if needed */
+  .search-component input {
+    font-size: 16px;
+  }
 }

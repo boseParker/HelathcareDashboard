@@ -1,0 +1,140 @@
+.activity-chart {
+  background: #f8fbff;
+  padding: 20px 24px;
+  border-radius: 12px;
+  max-width: 500px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  /* Add some horizontal padding on smaller screens */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chart-header h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+.chart-header span {
+  font-size: 13px;
+  color: #888;
+  flex: 1 1 auto;
+  text-align: right;
+}
+
+/* Chart body container */
+.chart-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Enable horizontal scroll on small devices */
+  padding-bottom: 10px;
+  gap: 8px;
+}
+
+/* Each day container */
+.chart-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+  flex: 0 0 auto;
+}
+
+.bars {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: flex-end;
+  height: 100px;
+  margin-bottom: 6px;
+}
+
+.bar {
+  width: 6px;
+  border-radius: 3px;
+}
+
+.cyan {
+  background-color: #00cfe8;
+}
+
+.blue {
+  background-color: #6f42c1;
+}
+
+.gray {
+  background-color: #d3d3d3;
+}
+
+.day-label {
+  font-size: 11px;
+  color: #555;
+  white-space: nowrap;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .activity-chart {
+    padding: 15px 16px;
+    max-width: 100%;
+  }
+
+  .chart-header h3 {
+    font-size: 14px;
+  }
+
+  .chart-header span {
+    font-size: 12px;
+  }
+
+  .chart-day {
+    width: 36px;
+  }
+
+  .bar {
+    width: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .activity-chart {
+    padding: 12px 12px;
+  }
+
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .chart-header span {
+    text-align: left;
+  }
+
+  .chart-day {
+    width: 32px;
+  }
+
+  .bar {
+    width: 4px;
+  }
+
+  .chart-body {
+    gap: 6px;
+    height: 80px;
+  }
+}

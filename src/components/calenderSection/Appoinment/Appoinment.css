@@ -1,0 +1,38 @@
+/* Appointment Cards */
+.cardSection {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.appointmentCard {
+    display: flex;
+    align-items: center;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 12px;
+  width: 200px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appointmentType {
+  font-weight: 600;
+  color: #444;
+}
+
+.time {
+  font-size: 14px;
+  color: #666;
+}
+
+.doctor {
+  font-size: 14px;
+  color: #007bff;
+}
+
+.appointmentCard img{
+  height: 50px;
+  width: 50px;
+}
+

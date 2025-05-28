@@ -1,0 +1,16 @@
+.user-detail-icon{
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+
+}
+
+.icons{
+  background-color: #fff;
+  color: rgb(102, 102, 240);
+  padding: 10px;
+  border-radius: 10px;
+
+  font-size: 24px;
+  border:1px solid #e2e2e2;
+}
